@@ -11,7 +11,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY target/swarmpit.jar /usr/src/app/
 
-EXPOSE 8080 9090
+EXPOSE 8080 9010
 CMD java \
  -Dcom.sun.management.jmxremote=true \
  -Dcom.sun.management.jmxremote.local.only=false \
