@@ -20,4 +20,4 @@ ENV JAVA_OPTS "-Dcom.sun.management.jmxremote.rmi.port=9090 \
                -Djava.rmi.server.hostname=localhost"
 
 EXPOSE 8080 9090
-CMD ["java", "${JAVA_OPTS}", "-jar", "swarmpit.jar"]
+CMD java $JAVA_OPTS -jar swarmpit.jar
