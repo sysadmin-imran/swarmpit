@@ -16,6 +16,9 @@ ENV HOST "0.0.0.0"
 
 EXPOSE 8080 9010
 CMD java \
+ -Dsun.management.jmxremote.level=FINEST \
+ -Dsun.management.jmxremote.handlers=java.util.logging.ConsoleHandler \
+ -Djava.util.logging.ConsoleHandler.level=FINEST \
  -Dcom.sun.management.jmxremote.local.only=false \
  -Dcom.sun.management.jmxremote.ssl=false \
  -Dcom.sun.management.jmxremote.authenticate=false \
